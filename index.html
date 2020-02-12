@@ -3,14 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header>
+<header class="header">
   <nav>
-    <a>
-      <img src="img/logo-sedona.svg" class="logo" width="140" height="71" alt="Логотип Седоны">
+    <a class="logo">
+      <img src="img/logo-sedona.svg"  width="140" height="71" alt="Логотип Седоны">
     </a>
-    <ul>
+    <ul class="navigation">
       <li><a href="#">Информация</a></li>
       <li><a href="#">Фото и видео</a></li>
       <li><a href="#">Карта штата</a></li>
@@ -18,54 +21,55 @@
     </ul>
   </nav>
 </header>
-<main>
-  <section>
+<main class="main-container">
+  <section class="greeting">
     <a><img src="img/welcome.svg" class="welcome" width="459" height="353" alt="Добро пожаловать в Седону"></a>
   </section>
-  <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-  <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
-  <section>
+  <h1 class="slogan"> Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+  <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+  <!----Пять причин ---->
+  <section class="search">
     <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
-    <p>Заинтересовались?</p>
-    <p>Укажите предполагаемые даты поездки,<br>
+    <p class="search-question">Заинтересовались?</p>
+    <p class="search-choice">Укажите предполагаемые даты поездки,<br>
       и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <button type="button">Поиск гостиницы в Седоне</button>
-    <form class="user" method="get" action="https://echo.htmlacademy.ru">
-      <p>
+    <button class="button-search-hotel" type="button">Поиск гостиницы в Седоне</button>
+    <form class="user-form" method="get" action="https://echo.htmlacademy.ru">
+      <p class="user-choice">
         <label for="user-data-check-in">Дата заезда:</label>
         <input type="text" id="user-data-check-in" name="data-check-in" placeholder="24 апреля 2017">
         <button type="button">Календарь</button>
       </p>
-      <p>
+      <p class="user-choice">
         <label for="user-data-check-out">Дата выезда:</label>
         <input type="text" id="user-data-check-out" name="data-check-out" placeholder="4 июля 2017">
         <button type="button">Календарь</button>
       </p>
-      <p>
+      <p class="user-choice">
         <label for="user-adults">Взрослые:</label>
         <input type="text" id="user-adults" name="adults" placeholder="2">
         <label for="user-child">Дети:</label>
         <input type="text" id="user-child" name="child" placeholder="0">
       </p>
-      <button type="submit">Найти</button>
+      <button class="button-choice" type="submit">Найти</button>
     </form>
   </section>
 </main>
-<footer>
-  <p>#Visitsedona</p>
-  <p>
+<footer class="footer">
+  <p class="footer-label">#Visitsedona</p>
+  <p class="footer-contact">
     <a href="tel:+74956660266">Тел:+7(495)666-02-66</a>
   </p>
-  <div>
+  <div class="footer-social-icon">
     <ul>
-      <li><a href="#"><img src="img/icon-vk.svg" alt="в Контакте"></a></li>
-      <li><a href="#"><img src="img/icon-fb.svg" alt="Фейсбук"></a></li>
-      <li><a href="#"><img src="img/icon-youtube.svg" alt="Ютуб"></a></li>
+      <li><a class="social-button" href="#"><img src="img/icon-vk.svg" alt="в Контакте"></a></li>
+      <li><a class="social-button" href="#"><img src="img/icon-fb.svg" alt="Фейсбук"></a></li>
+      <li><a class="social-button" href="#"><img src="img/icon-youtube.svg" alt="Ютуб"></a></li>
     </ul>
   </div>
-  <p>
+  <p class="footer-copyright">
     Website by
-    <a href="https://htmlacademy.ru"><img src="./img/logo-akademy.svg" alt="Логотип HTML Академии"></a>
+    <a class="logo-arademy" href="https://htmlacademy.ru"><img src="./img/logo-akademy.svg" alt="Логотип HTML Академии"></a>
   </p>
 </footer>
 </body>

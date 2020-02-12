@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Седона | Гостиницы</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic"
+        rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header>
+<header class="header">
   <nav>
-    <a href="index.html">
+    <a class="logo" href="index.html">
       <img src="img/logo-sedona.svg" class="logo" width="140" height="71" alt="Логотип Седоны">
     </a>
-    <ul>
+    <ul class="navigation">
       <li><a href="#">Информация</a></li>
       <li><a href="#">Фото и видео</a></li>
       <li><a href="#">Карта штата</a></li>
@@ -18,7 +22,7 @@
     </ul>
   </nav>
 </header>
-<main>
+<main class="main-container">
   <form class="filter" method="get" action="https://echo.htmlacademy.ru">
     <p>Инфраструктура:</p>
     <ul>
@@ -57,20 +61,20 @@
     </p>
     <button type="submit" class="filter-button dutton">Показать</button>
   </form>
-  <section>
+  <section class="filter-result">
     <h1 class="visually-hidden">Результат поиска гостиниц</h1>
     <ul>
       <li>
-        <div>
-          <a><img src="img/amara-resort-&-spa.jpg" class="amara" width="135" height="90"
+        <div class="hotel">
+          <a><img src="img/amara-resort-&-spa.jpg" class="amara-resort-&-spa" width="135" height="90"
                   alt="Изображение гостиницы Amara Resort & spa"></a>
         </div>
         <div>
-          <p>Amara Resort & SPA</p>
-          <p>Гостиница <span>от 4000 р.</span></p>
+          <p class="hotel-title">Amara Resort & SPA</p>
+          <p class="hotel-details">Гостиница <span>от 4000 р.</span></p>
           <p>
-            <a href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+            <a class="button-details" href="#">Подробнее</a>
+            <a class="button-reservation" href="#">Забронировать</a>
           </p>
         </div>
         <div>
@@ -79,59 +83,59 @@
         </div>
       </li>
       <li>
-        <div>
-          <a><img src="img/desert-quail-inn.jpg" class="desert" width="135" height="90"
+        <div class="hotel">
+          <a><img src="img/desert-quail-inn.jpg" class="desert-quail-inn" width="135" height="90"
                   alt="Изображение мотеля Desert quail inn"></a>
         </div>
         <div>
-          <p>Desert quail inn</p>
-          <p>Мотель <span>от 3000 р.</span></p>
+          <p class="hotel-title">Desert quail inn</p>
+          <p class="hotel-details">Мотель <span>от 3000 р.</span></p>
           <p>
-            <a href="">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+            <a class="button-details" href="">Подробнее</a>
+            <a class="button-reservation" href="#">Забронировать</a>
           </p>
         </div>
         <div>
-          <p>****</p>
-          <p>Рейтинг: 8,9</p>
+          <p class="star">****</p>
+          <p class="rating">Рейтинг: 8,9</p>
         </div>
       </li>
       <li>
-        <div>
-          <a><img src="img/villas-at-poco-diablo.jpg" class="villas" width="135" height="90"
+        <div class="hotel">
+          <a><img src="img/villas-at-poco-diablo.jpg" class="villas-at-poco-diablo" width="135" height="90"
                   alt="Изображение апартаменов Villas at poco diablo"></a>
         </div>
         <div>
-          <p>Villas at poco diablo</p>
-          <p>Апартаменты <span>от 2000 р.</span></p>
+          <p class="hotel-title">Villas at poco diablo</p>
+          <p class="hotel-details">Апартаменты <span>от 2000 р.</span></p>
           <p>
-            <a href="">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+            <a class="button-details" href="">Подробнее</a>
+            <a class="button-reservation" href="#">Забронировать</a>
           </p>
         </div>
         <div>
-          <p>****</p>
-          <p>Рейтинг: 9,2</p>
+          <p class="star">****</p>
+          <p class="star">Рейтинг: 9,2</p>
         </div>
       </li>
     </ul>
   </section>
 </main>
-<footer>
-  <p>#Visitsedona</p>
-  <p>
+<footer class="footer">
+  <p class="footer-label">#Visitsedona</p>
+  <p class="footer-contact">
     <a href="tel:+74956660266">Тел:+7(495)666-02-66</a>
   </p>
-  <div style="visibility: hidden;">
+  <div class="footer-social-icon">
     <ul>
-      <li><a href="#"><img src="img/icon-vk.svg" alt="в Контакте"></a></li>
-      <li><a href="#"><img src="img/icon-fb.svg" alt="Фейсбук"></a></li>
-      <li><a href="#"><img src="img/icon-youtube.svg" alt="Ютуб"></a></li>
+      <li><a class="social-button" href="#"><img src="img/icon-vk.svg" alt="в Контакте"></a></li>
+      <li><a class="social-button" href="#"><img src="img/icon-fb.svg" alt="Фейсбук"></a></li>
+      <li><a class="social-button" href="#"><img src="img/icon-youtube.svg" alt="Ютуб"></a></li>
     </ul>
   </div>
-  <p>
+  <p class="footer-copyright">
     Website by
-    <a href="https://htmlacademy.ru"><img src="img/logo-akademy.svg" alt="Логотип HTML Академии"></a>
+    <a class="logo-arademy" href="https://htmlacademy.ru"><img src="./img/logo-akademy.svg" alt="Логотип HTML Академии"></a>
   </p>
 </footer>
 </body>
