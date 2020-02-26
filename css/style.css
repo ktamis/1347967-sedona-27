@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "PT+Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
@@ -18,6 +18,7 @@ a {
 .visually-hidden {
   display: none;
 }
+
 .site-navigation {
   font-weight: bold;
   font-size: 14px;
@@ -50,6 +51,79 @@ a {
   color: #333333;
 }
 
+.title-white-reason {
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.number-white-reason {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.slogan-reason-white {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.number-black-reason {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+
+.slogan-reason-black {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+
+.title-icon-reason {
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+
+
+.title-black-reason {
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: 21px;
+  text-align: center;
+  color: black;
+}
+
+.slogan-icon {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+
 .search-question {
   font-size: 30px;
   font-weight: bold;
@@ -75,6 +149,7 @@ a {
   line-height: 26px;
   text-align: center;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .button-brown-colorname {
@@ -118,7 +193,7 @@ a {
   font-weight: bold;
   font-stretch: normal;
   line-height: 26px;
-  text-align: center;
+  text-align: left;
   color: #000000;
 }
 
@@ -127,7 +202,7 @@ a {
   font-weight: bold;
   font-stretch: normal;
   line-height: 26px;
-  text-align: center;
+  text-align: left;
   color: #000000;
 }
 
@@ -138,10 +213,6 @@ a {
   line-height: 26px;
   text-align: center;
   color: #000000;
-}
-
-.logo-akademy {
-
 }
 
 .footer-icon {
@@ -203,3 +274,272 @@ a {
   border: solid 2px #ffffff;
 }
 
+/* ------Сеточные стили ------*/
+
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+/*---Сетка для header----*/
+
+.main-navigation {
+  min-height: 56px;
+  background-color: white;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-navigation {
+  display: flex;
+  min-height: 56px;
+  margin: 0 auto;
+  background-color: darkcyan;
+}
+
+.logo {
+  position: absolute;
+  order: 2;
+  width: 140px;
+  height: 71px;
+}
+
+
+/*---Сетка для main------*/
+
+.main-contant {
+  width: 1200px;
+  min-height: 2586px;
+}
+
+/*---Сетка для приветствия---*/
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.promo {
+  width: 1200px;
+  min-height: 800px;
+}
+
+.sedona-foto {
+  width: 1200px;
+  height: 800px;
+}
+
+.welcome {
+  width: 459px;
+  height: 353px;
+  position: absolute;
+  top: 76px;
+  right: 371px;
+}
+
+.slogan {
+
+}
+
+.poligon {
+  width: 1203px;
+  height: 59px;
+  position: absolute;
+  top: 451px;
+  right: 0;
+}
+
+/*-----Сетка для блока 5 причин----*/
+
+.section-content {
+  width: 1200px;
+  height: 1098px;
+  background-color: gold;
+}
+
+.section1-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section1-content {
+  width: 1200px;
+  height: 256px;
+  background-color: coral;
+}
+
+.blue-form-reason1 {
+  width: 100%;
+  background-color: #81b3d2;
+}
+
+.feature-picture-1 {
+  width: 800px;
+  height: 256px;
+}
+
+.section2-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.section2-content {
+  width: 1200px;
+  height: 330px;
+  background-color: white;
+}
+
+.section3-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between
+}
+
+.section3-content {
+  width: 1200px;
+  height: 256px;
+  background-color: darkgoldenrod;
+}
+
+.blue-form-reason2 {
+  width: 100%;
+  background-color: #81b3d2;
+}
+
+.reason3,
+.reason4,
+.reason5 {
+  width: 100%;
+  background-color:#eeeeee;
+}
+
+.section4-content {
+  display: flex;
+  flex-direction: row;
+  }
+
+.section4-content {
+  width: 1200px;
+  height: 256px;
+  background-color: rosybrown;
+  justify-content: space-around;
+}
+
+/*----Сетка для блока поиск----*/
+
+.search {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 764px;
+  background-color: khaki;
+}
+
+.search-content {
+  width: 1200px;
+  height: 291px;
+  background-color: greenyellow;
+}
+
+.user-form {
+  width: 568px;
+  height: 395px;
+  background-color: darkcyan;
+}
+
+
+  /*----Сетка для footer-----*/
+
+.main-footer {
+  min-height: 120px;
+  background-color: white;
+}
+
+.footer-container {
+  width: 967px;
+  height: 52px;
+  margin-left: 132px;
+  margin-right: 101px;
+  }
+
+
+.main-footer
+.footer-container {
+  display: flex;
+}
+
+.footer-contacts {
+  width: 223px;
+  margin-right: 169px;
+
+}
+
+.footer-social {
+  width: 130px;
+}
+
+.footer-copyright {
+  width: 197px;
+  margin-left: auto;
+}
+/*-----catalog----*/
+
+.container {
+
+}
+.main-container {
+  min-height: 757px;
+  position: relative;
+}
+
+.filter-result {
+  min-height: 540px;
+  background-color: white;
+}
+
+.form-filter {
+  display: flex;
+  flex-direction: column;
+  min-height: 217px;
+}
+
+
+.sorting {
+  display: flex;
+  flex-direction: row;
+  min-height: 86px;
+}
+
+.list-hotels {
+  list-style: none;
+  flex-direction: column;
+  min-height: 453px;
+}
+
+.container-hotel {
+  display: flex;
+  flex-direction: row;
+  min-height: 150px;
+  }
+
+.container-motel {
+  display: flex;
+  flex-direction: row;
+  min-height: 150px;
+}
+
+.container-apartment {
+  display: flex;
+  flex-direction: row;
+  min-height: 150px;
+}

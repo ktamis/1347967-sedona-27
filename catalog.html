@@ -9,36 +9,39 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="header">
-  <nav>
-    <a href="index.html">
-      <img src="img/logo-sedona.svg" class="logo" width="140" height="71" alt="Логотип Седоны">
-    </a>
-    <ul class="site-navigation">
-      <li><a href="#">Информация</a></li>
-      <li><a href="#">Фото и видео</a></li>
-      <li><a href="#">Карта штата</a></li>
-      <li><a href="catalog.html">Гостиницы</a></li>
-    </ul>
-  </nav>
-</header>
-<main class="main-container">
-  <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-    <a><img src="img/filter-background.jpg" class="filter-background" width="1200" height="800"
-            alt="Фото Седоны размытое"></a>
-    <p class="filter-title">Инфраструктура:</p>
-    <ul>
-      <li class="filter-option">
-        <input type="checkbox" name="pool" id="filter-pool">
-        <label for="filter-pool">Бассейн</label>
-      </li>
-      <li class="filter-option">
-        <input type="checkbox" name="parking" id="filter-parcing">
-        <label for="filter-parcing">Парковка</label>
-      </li>
-      <li class="filter-option">
-        <input type="checkbox" name="wi-fi" id="wi-fi">
-        <label for="wi-fi">wi-fi</label>
+<div class="container">
+  <header>
+    <nav class="main-navigation">
+      <a class="logo" href="index.html">
+        <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седоны">
+      </a>
+      <ul class="site-navigation">
+        <li class="nav-info"><a href="#">Информация</a></li>
+        <li class="nav-foto"><a href="#">Фото и видео</a></li>
+        <li class="nav-map"><a href="#">Карта штата</a></li>
+        <li class="nav-hotel"><a href="catalog.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-container">
+    <div class="form-filter" method="get" action="https://echo.htmlacademy.ru">
+      <a><img src="img/filter-background.jpg" class="filter-background" width="1200" height="800"
+              alt="Фото Седоны размытое"></a>
+     </div>
+        <form>
+        <p class="filter-title">Инфраструктура:</p>
+        <ul>
+          <li class="filter-option">
+            <input type="checkbox" name="pool" id="filter-pool">
+            <label for="filter-pool">Бассейн</label>
+          </li>
+          <li class="filter-option">
+            <input type="checkbox" name="parking" id="filter-parcing">
+            <label for="filter-parcing">Парковка</label>
+          </li>
+          <li class="filter-option">
+            <input type="checkbox" name="wi-fi" id="wi-fi">
+            <label for="wi-fi">wi-fi</label>
       </li>
     </ul>
     <p class="filter-title">Тип жилья:</p>
@@ -65,8 +68,21 @@
   </form>
   <section class="filter-result">
     <h1 class="visually-hidden">Результат поиска гостиниц</h1>
-    <ul>
-      <li>
+    <div class="sorting">
+      <p>Найдено: 3</p>
+      <p>Сортировка:</p>
+      <p>
+        <a class="button-price button-price-colorname button-price-filter" href="#">По цене</a>
+        <a class="button-type button-type-colorname button-type-filter" href="#">По типу</a>
+        <a class="button-rating button-rating-colorname button-rating-filter" href="#">По рейтингу</a>
+      <div>
+        <a><img src="img/icon-up-dir.svg" class="icon-up-dir" alt="Кнопка сортировки вверх"></a>
+        <a><img src="img/icon-down-dir.svg" class="icon-down-dir" alt="Кнопка сортировки вниз"></a>
+      </div>
+      </p>
+    </div>
+    <ul class="list-hotels">
+      <li class="container-hotel">
         <div class="hotel">
           <a><img src="img/amara-resort-and-spa.jpg" class="amara-resort-and-spa" width="135" height="90"
                   alt="Изображение гостиницы Amara Resort & spa"></a>
@@ -81,11 +97,16 @@
           </p>
         </div>
         <div>
-          <p>****</p>
+          <p сlass="star">
+            <a><img src="img/star.svg" alt="Звезды рейтинга"></a>
+            <a><img src="img/star.svg" alt="Звезды рейтинга"></a>
+            <a><img src="img/star.svg" alt="Звезды рейтинга"></a>
+            <a><img src="img/star.svg" alt="Звезды рейтинга"></a>
+          </p>
           <p>Рейтинг: 8,5</p>
         </div>
       </li>
-      <li>
+      <li class="container-motel">
         <div class="hotel">
           <a><img src="img/desert-quail-inn.jpg" class="desert-quail-inn" width="135" height="90"
                   alt="Изображение мотеля Desert quail inn"></a>
@@ -100,11 +121,15 @@
           </p>
         </div>
         <div>
-          <p class="star">****</p>
+          <p class="star">
+            <a><img src="img/star.svg" alt="Звезды рейтинга"></a>
+            <a><img src="img/star.svg" alt="Звезды рейтинга"></a>
+            <a><img src="img/star.svg" alt="Звезды рейтинга"></a>
+          </p>
           <p class="rating">Рейтинг: 8,9</p>
         </div>
       </li>
-      <li>
+      <li class="container-apartment">
         <div class="hotel">
           <a><img src="img/villas-at-poco-diablo.jpg" class="villas-at-poco-diablo" width="135" height="90"
                   alt="Изображение апартаменов Villas at poco diablo"></a>
@@ -119,34 +144,46 @@
           </p>
         </div>
         <div>
-          <p class="star">****</p>
+          <p class="star"><a><img src="img/star.svg" alt="Звезды рейтинга"></a>
+            <a><img src="img/star.svg" alt="Звезды рейтинга"></a>
+          </p>
           <p class="star">Рейтинг: 9,2</p>
         </div>
       </li>
     </ul>
   </section>
 </main>
-<footer class="footer">
-  <div>
-    <p class="footer-label">#Visitsedona
-      <a class="footer-contact" href="tel:+74956660266">Тел:+7(495)666-02-66</a>
-    </p>
-  </div>
-  <div class="footer-social-icon">
-    <ul class="footer-icon">
-      <li><a aria-label="Переход на страницу Седоны в Твиттере" class="button-social" href="#"><img
-        src="img/twitter.svg" alt="Твиттер"></a></li>
-      <li><a aria-label="Переход на страницу Седоны в Фейсбуке" class="button-social" href="#"><img
-        src="img/fb-icon.svg" alt="Фейсбук"></a></li>
-      <li><a aria-label="Переход на страницу Седоны в Ютубе" class="button-social" href="#"><img src="img/youtube.svg"
-                                                                                                 alt="Ютуб"></a></li>
-    </ul>
-  </div>
-  <p class="footer-copyright">
-    Website by
-    <a class="logo-akademy" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41"
-                                                               alt="Логотип HTML Академии"></a>
-  </p>
-</footer>
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-contacts">
+        <p>#Visitsedona </p>
+        <a href="tel:+74956660266">Тел:+7(495)666-02-66</a>
+      </div>
+      <div class="footer-social">
+        <ul class="footer-icon">
+          <li>
+            <a aria-label="Переход на страницу Седоны в Твиттере" class="social-button"
+               href="#"><img src="img/twitter.svg" alt="Твиттер"></a>
+          </li>
+          <li>
+            <a aria-label="Переход на страницу Седоны в Фейсбуке" class="social-button"
+               href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a>
+          </li>
+          <li>
+            <a aria-label="Переход на страницу Седоны в Ютубе" class="social-button"
+               href="#"><img src="img/youtube.svg" alt="Ютуб"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
+        <p >
+          Website by
+          <a class="logo-akademy" href="https://htmlacademy.ru">
+            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Академии"></a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
 </body>
 </html>
