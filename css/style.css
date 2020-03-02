@@ -6,7 +6,6 @@ body {
   line-height: 21px;
   color: #000000;
   text-transform: uppercase;
-
   background-color: white;
   background-position: center;
 }
@@ -15,11 +14,27 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 .visually-hidden {
   display: none;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*---header----*/
+
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 56px;
+  margin: 0;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
@@ -27,10 +42,73 @@ a {
   text-align: center;
   color: black;
   list-style: none;
+  outline: 2px solid darkcyan;
 }
 
 .site-navigation a {
+  display: block;
+  padding: 0;
   color: black
+}
+
+.logo {
+  position: absolute;
+  margin-left: 530px;
+  width: 140px;
+  height: 71px;
+}
+
+/*---main------*/
+
+
+/* скорее всего лишнее
+.main-navigation {
+  min-height: 56px;
+  background-color: white;
+}
+
+.main-contant {
+  width: 1200px;
+  min-height: 2586px;
+}*/
+
+/*---Сетка для приветствия---*/
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  min-height: 724px;
+  align-items: center;
+  position: relative;
+  outline: 2px solid red;
+}
+
+.welcome {
+  position: absolute;
+  left: 371px;
+  bottom: 293px;
+}
+
+.sedona-foto {
+  width: 1200px;
+  height: 800px;
+}
+
+.poligon {
+  width: 1203px;
+  height: 59px;
+  position: absolute;
+  bottom: 214px;
+  right: 0;
+}
+
+.white-back {
+  width: 1200px;
+  height: 216px;
+  position: absolute;
+  bottom: 0;
+  background-color: white;
 }
 
 .slogan {
@@ -40,9 +118,10 @@ a {
   line-height: 26px;
   text-align: center;
   color: black;
+  margin-top: 61px;
 }
 
-.reasons {
+.reasons-slogan {
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -50,13 +129,40 @@ a {
   text-align: center;
   color: #333333;
 }
+/*-----Пять причин----*/
 
+/*скорее всего ненужен
+.section-content {
+  width: 1200px;
+  height: 1098px;
+  background-color: gold;
+}*/
+
+.section1-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 256px;
+  outline: 2px solid coral;
+}
+
+.blue-form-reason1 {
+  width: 400px;
+  min-height: 256px;
+  background-color: #81b3d2;
+}
+
+.feature-picture-1 {
+  width: 800px;
+  height: 256px;
+}
 .title-white-reason {
   font-size: 21px;
   font-weight: bold;
   font-stretch: normal;
   line-height: 21px;
   text-align: center;
+  margin-top: 53px;
   color: #ffffff;
 }
 
@@ -75,6 +181,7 @@ a {
   font-stretch: normal;
   line-height: 21px;
   text-align: center;
+  margin-bottom: 64px;
   color: #ffffff;
 }
 
@@ -96,6 +203,11 @@ a {
   color: #000000;
 }
 
+.icon-1
+.icon-2
+.icon-3 {
+}
+
 .title-icon-reason {
   font-size: 21px;
   font-weight: bold;
@@ -112,6 +224,7 @@ a {
   font-stretch: normal;
   line-height: 21px;
   text-align: center;
+  margin-top: 50px;
   color: black;
 }
 
@@ -122,6 +235,64 @@ a {
   line-height: 21px;
   text-align: center;
   color: #333333;
+}
+.section2-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 1200px;
+  height: 330px;
+  background-color: white;
+  outline: 2px solid khaki;
+}
+
+.section3-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 1200px;
+  height: 256px;
+  outline: 2px solid darkgoldenrod;
+}
+
+.blue-form-reason2 {
+  width: 400px;
+  background-color: #81b3d2;
+}
+
+.reason3,
+.reason4,
+.reason5 {
+  width: 100%;
+  background-color:#eeeeee;
+}
+
+.section4-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 1200px;
+  height: 256px;
+  outline: 2px solid rebeccapurple;
+}
+
+/*----поиск----*/
+
+.search {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 1200px;
+  min-height: 764px;
+  outline: 2px solid khaki;
+}
+
+.search-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 291px;
+  background-color: white;
+  outline: 2px solid greenyellow;
 }
 
 .search-question {
@@ -159,15 +330,78 @@ a {
 .button-brown-filter {
   width: 568px;
   height: 86px;
+  margin: auto;
 }
 
-.user-choice {
+/*---форма---*/
+
+.user-form {
+  position: absolute;
+  left: 316px;
+  bottom: 198px;
+  width: 568px;
+  height: 395px;
+  background-color: white;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 458px;
+  height: 285px;
+  margin-top: 55px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 2px solid greenyellow;
+}
+
+
+.user-choice-date input {
+  box-sizing: border-box;
+  width: 346px;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: 13px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #000000;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  padding-left: 13px;
+  background-color: #f2f2f2;
+}
+
+.user-choice-date label {
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: 13px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #000000;
+  padding-right: 0px;
+}
+
+.user-choice-number {
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
   line-height: 26px;
-  text-align: left;
   color: #000000;
+}
+
+.user-choice-number input {
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
 }
 
 .button-blue {
@@ -175,9 +409,10 @@ a {
   font-weight: bold;
   font-stretch: normal;
   line-height: 26px;
+  text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-}
+  }
 
 .button-blue-colorname {
   background-color: #81b3d2;
@@ -186,7 +421,23 @@ a {
 .button-blue-filter {
   width: 458px;
   height: 58px;
+  margin-bottom: 0px;
 }
+
+.button-calendar1 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+}
+
+.button-calendar2 {
+  position: absolute;
+  top: 21px;
+  right: 22px;
+
+}
+/*----футер---*/
 
 .footer-label {
   font-size: 21px;
@@ -217,6 +468,80 @@ a {
 
 .footer-icon {
   list-style: none;
+}
+
+
+
+
+
+
+
+
+
+  /*----Сетка для footer-----*/
+
+.main-footer {
+  min-height: 120px;
+  background-color: white;
+}
+
+.footer-container {
+  width: 967px;
+  height: 52px;
+  margin-left: 132px;
+  margin-right: 101px;
+  }
+
+
+.main-footer
+.footer-container {
+  display: flex;
+}
+
+.footer-contacts {
+  width: 223px;
+  margin-right: 169px;
+
+}
+
+.footer-social {
+  width: 130px;
+}
+
+.footer-copyright {
+  width: 197px;
+  margin-left: auto;
+}
+
+
+/*-----catalog----*/
+
+
+
+.container {
+
+}
+.main-container {
+  min-height: 757px;
+  position: relative;
+}
+
+.filter-result {
+  min-height: 540px;
+  background-color: white;
+}
+
+.form-filter {
+  display: flex;
+  flex-direction: column;
+  min-height: 217px;
+}
+
+
+.sorting {
+  display: flex;
+  flex-direction: row;
+  min-height: 86px;
 }
 
 .hotel-title {
@@ -274,251 +599,6 @@ a {
   border: solid 2px #ffffff;
 }
 
-/* ------Сеточные стили ------*/
-
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-
-/*---Сетка для header----*/
-
-.main-navigation {
-  min-height: 56px;
-  background-color: white;
-}
-
-.main-navigation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.site-navigation {
-  display: flex;
-  min-height: 56px;
-  margin: 0 auto;
-  background-color: darkcyan;
-}
-
-.logo {
-  position: absolute;
-  order: 2;
-  width: 140px;
-  height: 71px;
-}
-
-
-/*---Сетка для main------*/
-
-.main-contant {
-  width: 1200px;
-  min-height: 2586px;
-}
-
-/*---Сетка для приветствия---*/
-
-.promo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.promo {
-  width: 1200px;
-  min-height: 800px;
-}
-
-.sedona-foto {
-  width: 1200px;
-  height: 800px;
-}
-
-.welcome {
-  width: 459px;
-  height: 353px;
-  position: absolute;
-  top: 76px;
-  right: 371px;
-}
-
-.slogan {
-
-}
-
-.poligon {
-  width: 1203px;
-  height: 59px;
-  position: absolute;
-  top: 451px;
-  right: 0;
-}
-
-/*-----Сетка для блока 5 причин----*/
-
-.section-content {
-  width: 1200px;
-  height: 1098px;
-  background-color: gold;
-}
-
-.section1-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.section1-content {
-  width: 1200px;
-  height: 256px;
-  background-color: coral;
-}
-
-.blue-form-reason1 {
-  width: 100%;
-  background-color: #81b3d2;
-}
-
-.feature-picture-1 {
-  width: 800px;
-  height: 256px;
-}
-
-.section2-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.section2-content {
-  width: 1200px;
-  height: 330px;
-  background-color: white;
-}
-
-.section3-content {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between
-}
-
-.section3-content {
-  width: 1200px;
-  height: 256px;
-  background-color: darkgoldenrod;
-}
-
-.blue-form-reason2 {
-  width: 100%;
-  background-color: #81b3d2;
-}
-
-.reason3,
-.reason4,
-.reason5 {
-  width: 100%;
-  background-color:#eeeeee;
-}
-
-.section4-content {
-  display: flex;
-  flex-direction: row;
-  }
-
-.section4-content {
-  width: 1200px;
-  height: 256px;
-  background-color: rosybrown;
-  justify-content: space-around;
-}
-
-/*----Сетка для блока поиск----*/
-
-.search {
-  display: flex;
-  flex-direction: column;
-  width: 1200px;
-  height: 764px;
-  background-color: khaki;
-}
-
-.search-content {
-  width: 1200px;
-  height: 291px;
-  background-color: greenyellow;
-}
-
-.user-form {
-  width: 568px;
-  height: 395px;
-  background-color: darkcyan;
-}
-
-
-  /*----Сетка для footer-----*/
-
-.main-footer {
-  min-height: 120px;
-  background-color: white;
-}
-
-.footer-container {
-  width: 967px;
-  height: 52px;
-  margin-left: 132px;
-  margin-right: 101px;
-  }
-
-
-.main-footer
-.footer-container {
-  display: flex;
-}
-
-.footer-contacts {
-  width: 223px;
-  margin-right: 169px;
-
-}
-
-.footer-social {
-  width: 130px;
-}
-
-.footer-copyright {
-  width: 197px;
-  margin-left: auto;
-}
-/*-----catalog----*/
-
-.container {
-
-}
-.main-container {
-  min-height: 757px;
-  position: relative;
-}
-
-.filter-result {
-  min-height: 540px;
-  background-color: white;
-}
-
-.form-filter {
-  display: flex;
-  flex-direction: column;
-  min-height: 217px;
-}
-
-
-.sorting {
-  display: flex;
-  flex-direction: row;
-  min-height: 86px;
-}
 
 .list-hotels {
   list-style: none;

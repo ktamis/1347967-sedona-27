@@ -28,9 +28,11 @@
     <a><img src="img/sedona.jpg" class="sedona-foto" width="1200" height="773" alt="Фото Седоны"></a>
     <a><img src="img/intro-welcome.svg" class="welcome" width="459" height="353" alt="Добро пожаловать в Седону"></a>
     <a><img src="img/intro-mask.svg" class="poligon" width="1203" height="59" alt="Белая маска"></a>
-    <h1 class="slogan"> Седона - небольшой городок в Аризоне,<br>
-      заслуживающий большего!</h1>
-    <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+    <div class="white-back">
+      <h1 class="slogan"> Седона - небольшой городок в Аризоне,<br>
+        заслуживающий большего!</h1>
+      <p class="reasons-slogan">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+    </div>
   </section>
   <!----Пять причин ---->
   <section class="section-content">
@@ -107,29 +109,35 @@
     </button>
     </div>
     <div>
-      <img src="img/map.jpg" alt="Карта">
+      <img src="img/map.jpg" alt="Карта" width="1200" height="593">
     </div>
     <form class="user-form" method="get" action="https://echo.htmlacademy.ru">
-      <p class="user-choice">
+      <div class="form-container">
+      <p class="user-choice-date">
         <label for="user-data-check-in">Дата заезда:</label>
         <input type="text" id="user-data-check-in" name="data-check-in" placeholder="24 апреля 2017">
-        <button type="button" aria-label="Календарь">
+        <button class="button-calendar1" type="button" aria-label="Календарь">
           <img src="img/calendar.svg" alt="Календарь"></button>
       </p>
-      <p class="user-choice">
+      <p class="user-choice-date">
         <label for="user-data-check-out">Дата выезда:</label>
         <input type="text" id="user-data-check-out" name="data-check-out" placeholder="4 июля 2017">
-        <button type="button" aria-label="Календарь">
+        <button class="button-calendar2" type="button" aria-label="Календарь">
           <img src="img/calendar.svg" alt="Календарь"></button>
       </p>
-      <p class="user-choice">
+      <p class="user-choice-number">
         <label for="user-adults">Взрослые:</label>
+        <input type="text" id="user-adults-" name="adults-" placeholder="-">
         <input type="text" id="user-adults" name="adults" placeholder="2">
+        <input type="text" id="user-adults+" name="adults+" placeholder="+">
         <label for="user-child">Дети:</label>
+        <input type="text" id="user-child-" name="child-" placeholder="-">
         <input type="text" id="user-child" name="child" placeholder="0">
+        <input type="text" id="user-child+" name="child+" placeholder="+">
       </p>
       <button class="button-blue button-blue-colorname button-blue-filter" type="submit">Найти
       </button>
+      </div>
     </form>
      </section>
 </main>
