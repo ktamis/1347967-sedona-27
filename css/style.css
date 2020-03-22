@@ -93,6 +93,7 @@ img {
   background-size: 100%, cover;
   background-repeat: no-repeat;
   background-position: right 0 top 451px, center -83px;
+  background-color: #81b3d2;
 }
 .welcome {
   position: absolute;
@@ -107,7 +108,7 @@ img {
   background-color: white;
 }
 .slogan {
-  max-width: 575px;
+  max-width: 450px;
   margin: 59px auto 28px;
   padding: 0;
   font-size: 21px;
@@ -218,17 +219,17 @@ img {
 }
 /*----Search hotel ----*/
 .search {
-  display: flex;
-  flex-direction: column;
   position: relative;
-  width: 1200px;
+  text-align: center;
 }
 .search-content {
-  display: flex;
-  flex-direction: column;
-  min-height: 291px;
+  width: 568px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 53px;
   background-color: #ffffff;
 }
+
 .search-question {
   max-width: 450px;
   font-size: 30px;
@@ -236,7 +237,7 @@ img {
   font-stretch: normal;
   line-height: 36px;
   text-align: center;
-  margin: 50px auto 25px;
+  margin: 0 auto 24px;
   color: #000000;
 }
 .search-choice {
@@ -247,6 +248,8 @@ img {
   line-height: 24px;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 45px;
+
   color: #333333;
 }
 .button-brown {
@@ -271,13 +274,29 @@ img {
   border: none;
 }
 .button-brown-filter {
-  position: absolute;
+  display: block;
   width: 568px;
-  height: 86px;
-  margin-top: 205px;
-  margin-left: 316px;
-  padding: 0;
+  padding: 30px 84px;
+  margin: 0 auto;
 }
+.map {
+  position: relative;
+  background-color: #ebebeb;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.map iframe {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 593px;
+}
+
+
 /*---modal form---*/
 .user-form {
   padding: 55px;
@@ -430,7 +449,7 @@ img {
 .main-footer {
   display: flex;
   position: absolute;
-  bottom: 7px;
+  bottom: 6px;
 }
 .page-footer-content {
   position: relative;
@@ -462,7 +481,7 @@ img {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding-left: 80px;
+  padding-left: 75px;
 }
 .footer-contacts a {
   color: #000000;
@@ -521,11 +540,10 @@ img {
   line-height: 26px;
   text-align: center;
   padding: 0;
-  margin: 0 8px;
+  margin: 0 5px;
   color: #000000;
 }
 .logo-academy {
-  display: block;
   padding: 0;
   margin: 0;
 }
@@ -743,7 +761,7 @@ img {
   font-stretch: normal;
   line-height: 26px;
   margin-top: 31px;
-  margin-right: 49px;
+  margin-right: 48px;
   margin-left: 72px;
   padding: 0;
   color: #000000;
@@ -754,32 +772,34 @@ img {
   font-stretch: normal;
   line-height: 18px;
   margin-top: 38px;
-  margin-right: 40px;
+  margin-right: 39px;
   margin-left: 0;
   padding: 0;
   color: #000000;
 }
+.sorting-by {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sorting-by a {
+  margin: 38px 33px 0 0;
+  }
 .button-price {
-  display: inline-block;
   font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
   line-height: 18px;
-  margin-right: 33px;
-  margin-left: 0;
-  padding: 0;
   color: #81b3d2;
 }
 .button-type, .button-rating {
-  display: inline-block;
+
   font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
   line-height: 18px;
-  margin-top: 38px;
-  margin-right: 30px;
-  margin-left: 0;
-  padding: 0;
+
+
   text-decoration: underline;
   text-decoration-style: dotted;
   text-decoration-color: #81b3d2;
@@ -828,7 +848,7 @@ img {
 .hotel-image {
   display: -webkit-box;
   display: flex;
-  padding: 30px 72px 24px;
+  padding: 30px 65px 24px 72px;
   border-top: 1px solid #e5e5e5;
 }
 .list-hotels li:last-child {
@@ -849,6 +869,7 @@ img {
   margin-top: -3px;
   margin-bottom: 9px;
   color: #000000;
+  letter-spacing: 0.2pt;
 }
 .hotel-title:hover, .hotel-title:focus {
   color: #81b3d2;
@@ -923,11 +944,11 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 .hotel-details {
-  width: 240px;
+  width: 245px;
 }
 .hotel-stars {
   height: 17px;
-  margin: -1px 0 47px auto;
+  margin: -1px 0 50px auto;
 }
 .hotel-stars-four {
   max-width: 100px;
@@ -937,14 +958,14 @@ img {
   background-position: 0 center;
 }
 .hotel-stars-three {
-  max-width: 65px;
+  max-width: 75px;
   background-image: url("../img/star.svg");
   background-repeat: repeat-x;
   background-size: contain;
   background-position: -1px center;
 }
 .hotel-stars-two {
-  max-width: 41px;
+  max-width: 50px;
   background-image: url("../img/star.svg");
   background-repeat: repeat-x;
   background-size: contain;
@@ -954,7 +975,7 @@ img {
   font-family: inherit;
   width: 111px;
   margin: 0;
-  margin-left: auto;
+  margin-left: 130px;
   padding: 2px 0;
   text-align: center;
   color: #666666;
