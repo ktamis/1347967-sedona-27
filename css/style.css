@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -237,7 +238,7 @@ img {
   font-stretch: normal;
   line-height: 36px;
   text-align: center;
-  margin: 0 auto 24px;
+  margin: 0 auto 23px;
   color: #000000;
 }
 .search-choice {
@@ -279,6 +280,7 @@ img {
   padding: 30px 84px;
   margin: 0 auto;
 }
+
 .map {
   position: relative;
   background-color: #ebebeb;
@@ -296,6 +298,57 @@ img {
   height: 593px;
 }
 
+/* animation */
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
 
 /*---modal form---*/
 .user-form {
@@ -303,45 +356,59 @@ img {
 }
 .modal {
   position: absolute;
-  bottom: 0;
+  bottom: 600px;
   top: 291px;
   left: 316px;
-  width: 0;
   height: 395px;
   z-index: 20;
   display: block;
   background-color: #ffffff;
   box-shadow: 0 10px 15px 7px rgba(0, 1, 1, 0.15);
+  margin-bottom: -395px;
 }
 .modal-hide {
   display: none;
 }
+
+.modal-validation-error {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: 2.0s;
+  animation-duration: 2.0s;
+}
 .modal-search-hotel {
   width: 568px;
   margin-left: 0;
-  margin-bottom: 0;
+
   padding: 0;
+}
+.modal-form {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
 }
 .modal-group {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
+
   margin-bottom: 29px;
+  padding-left: 0;
   max-height: 38px;
 }
-.modal-group:last-child {
-  margin-bottom: 54px;
-}
+
 .modal-group label {
   width: 112px;
   font-weight: 700;
   line-height: 26px;
+  text-align: left;
   color: #000000;
+  letter-spacing: 0.2pt;
 }
 .modal-group input {
   width: 306px;
-  padding: 4px 10px;
+  padding: 4px 12px;
   font-weight: 700;
   line-height: 26px;
   color: #000000;
@@ -394,8 +461,11 @@ img {
   width: 50%;
 }
 .modal-group-number .modal-group:last-child {
-  margin-left: 4px;
   text-align: center;
+}
+.modal-group:last-child {
+  margin-left: 5px;
+  margin-bottom: 54px;
 }
 .modal-group-number input {
   width: 37px;
@@ -784,7 +854,7 @@ img {
 }
 .sorting-by a {
   margin: 38px 33px 0 0;
-  }
+}
 .button-price {
   font-size: 12px;
   font-weight: normal;
