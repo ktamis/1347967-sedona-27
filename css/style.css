@@ -86,7 +86,6 @@ img {
 /*---Welcome---*/
 .promo {
   display: flex;
-  flex-direction: column;
   min-height: 724px;
   align-items: center;
   position: relative;
@@ -408,6 +407,7 @@ img {
 }
 .modal-group input {
   width: 306px;
+  height: 38px;
   padding: 4px 12px;
   font-weight: 700;
   line-height: 26px;
@@ -526,7 +526,6 @@ img {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
-  align-items: center;
   min-height: 120px;
   margin-top: auto;
   margin-bottom: 0;
