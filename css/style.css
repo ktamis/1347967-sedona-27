@@ -325,7 +325,6 @@ img {
 .modal {
   position: absolute;
   bottom: 600px;
-  top: 291px;
   left: 316px;
   height: 395px;
   z-index: 20;
@@ -679,6 +678,10 @@ img {
 .form-filter-input[type="checkbox"]:disabled + label, .form-filter-input[type="checkbox"]:checked:disabled + label {
   opacity: 0.3;
 }
+.form-filter-input:focus+label {
+  outline: 1px solid #eeeeee;
+}
+
 .form-filter-button {
   width: 138px;
   margin-left: 83px;
