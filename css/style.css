@@ -39,10 +39,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   z-index: 1;
-  min-height: 56px;
   margin: 0 72px;
-  padding: 0;
-  align-items: center;
+  padding: 15px 0;
   list-style: none;
   background-color: white;
 }
@@ -850,11 +848,12 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 .sorting-by a {
   margin: 38px 33px 0 0;
 }
-.button-price {
+.button-active {
   font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
@@ -868,20 +867,15 @@ img {
   font-stretch: normal;
   line-height: 18px;
 
-
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: #81b3d2;
   color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
 }
 .button-type:hover, .button-type:focus {
   color: #81b3d2;
 }
 .button-type:active {
   color: #000000;
-}
-.button-rating:hover, .button-rating:focus {
-  color: #81b3d2;
+  border-bottom: none;
 }
 .button-rating:active {
   color: #000000;
